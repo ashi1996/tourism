@@ -1,0 +1,38 @@
+main div .card{
+  margin: 20px;
+  
+}
+
+main .card-header {
+  
+  transition: 0.8s;
+  background: linear-gradient(
+    to right,
+    rgba(241, 246, 249, 1) 0%,
+    rgba(214, 226, 235, 1) 0%,
+    rgba(225, 240, 250, 1) 0%,
+    rgba(119, 178, 223, 0.85) 51%,
+    rgba(175, 199, 213, 0.7) 100%
+  );
+}
+
+
+main .card-header:hover {
+  transform: scale(1.02,1.02);
+}
+
+main .card-header button {
+  font-size:1em;
+  color: rgb(24, 11, 110);
+}
+
+/* main .collapse .card-body{
+  border-radius: 50px solid;
+} */
+
+main .card-body{
+  background: linear-gradient(135deg, rgba(189,241,255,1) 0%, rgba(228,245,251,1) 36%, rgba(255,252,214,1) 69%, rgba(255,245,204,1) 100%);
+  /* border-radius: 8px solid; */
+}
+
+

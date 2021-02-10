@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/bootstrap.min.css">
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/mediaStyle.css">
+
+  <!-- pattaya -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+  
+  <title>Media</title>
+ 
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="js/viewGoUp.js"></script>
+  <script src="js/init_media.js"></script>
+  <script src="js/media_meneger.js"></script>
+  <script src="js/myUtil_js.js"></script>
+  <script src="js/header_nav_maneger.js"></script>
+  <script src="js/mediaClass.js"></script>
+  <script src="json/media_json.js"></script>
+</head>
+
+<body">
+
+  <header class="container-fluid  p-0" id="head">
+
+    <div class=" pl-0 col-12 d-flex justify-content-between align-items-center" style="min-height: 100px">
+      <img src="_images/logo.png" alt="logo" width="200">
+
+      <div class="d-flex justify-content-between">
+        <div class="serch d-none d-md-block mr-lg-3 mr-md-2 ">
+          <input type="text" placeholder="search...">
+          <i class="fa fa-plane mr-1" aria-hidden="true" style="font-size: 1em;"></i>
+         
+        </div>
+
+        <i class="d-md-none mx-3 fa fa-bars" style="font-size: 2em;" aria-hidden="true" id="burger_btn"></i>
+
+      </div>
+
+
+    </div>
+
+    <div class="container p-0">
+
+      <nav class="d-md-flex justify-content-center align-items-center p-0" id="nav_id">
+        <a class="nav1 mx-md-2" href="index.html">HOME</a>
+        <a class="nav2 mx-md-2" href="about.html">ABOUT</a>
+        <a class="nav3 mx-md-2" href="media.html">MEDIA</a>
+        <a class="nav4 mx-md-2" href="faq.html">FAQ</a>
+        <a class="nav5 mx-md-2" href="contact.html">CONTACT</a>
+        <a class="nav6 mx-md-2" href="trivia.html">TRIVIA</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container-fluid p-5 text-center">
+    <h1 class="text-dark ">images</h1>
+    <hr class="bg-dark col-4">
+    <hr class="bg-dark col-8">
+    
+    <div class="dark_window" id="id_dark_window">
+       <div class="dark_box_inside">
+          <img id="id_dark_img" src="" class="w-100 float-left mr-2">
+          <h2 id="id_dark_title"></h2>
+         <p id="id_dark_p"></p>
+          <button id="dark_close_btn" class="btn btn-danger">close</button>
+        </div>
+       </div>
+
+    <div class="col-12 p-2 ">
+      <div class="insideImages col-12  d-flex flex-wrap p-3" id="media_img">
+        <!-- <div class="images col-2 m-3">
+            <img src="_images/poto1.jpg" width="200" alt="">
+        </div>
+        -->
+      </div>
+    </div>
+
+    <hr class="bg-dark mb-5" style="min-height: 3px;">
+    <h1 class="text-dark ">video</h1>
+    <hr class="bg-dark col-4">
+    <hr class="bg-dark col-8">
+    <div class="col-12 p-1">
+      <div class="insideImages col-12 d-flex flex-wrap p-3" id="media_img">
+        <div class="images col-md-6 p-3">
+            <div class="border videoBox">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/7lvXbfNBIQg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- box2 -->
+        <div class="images col-md-6 p-3">
+            <div class="border videoBox">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/zYWj-ly7nR8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- box3 -->
+        <div class="images col-md-6 p-3">
+            <div class="border videoBox">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/3C4HKB0Wts8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- box4 -->
+        <div class="images col-md-6 p-3">
+            <div class="border videoBox">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/_gwTu9hCqp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+       
+      </div>
+    </div>
+  </main>
+  
+  <div id="holdGoUp" class="container-fluid d-flex justify-content-center  d-md-none" style="position: fixed; bottom:4px;z-index: 999;" >
+    <a href="#head">
+    <button class="btn btn-dark text-white px-5 btnUp " id="takeMeUp">Go-up</button>
+  </a>
+  </div>
+    
+  <footer class="container-fluid py-5">
+    <div class="container">
+      <div class="links col-12 row justify-content-around">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/?lang=he"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.youtube.com/"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+      </div>
+
+      <div class=" d-none d-md-block float-right mx-3"><a href="#head"><i class="fa fa-chevron-up p-1"
+            aria-hidden="true" style="color: cadetblue;"></i>
+        </a></div>
+      <div class="bottom">
+        <p class="text-center mt-5 text-light h6 md-h4 text-dark">create by ashi mor. <span
+            class="d-flex justify-content-center  d-md-inline-block"> All right reserved &copy;</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+main .bgMain{
+  background:rgb(215, 224, 197);
+  /* background: #ffffee; */
+}
+
+main .form{
+  background: silver;
+  border-radius:7px ;
+}
+
+main textarea{
+  border-radius:7px ;
+  
+}

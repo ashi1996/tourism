@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+main{
+  background: #ffffee;
+}
+
+h2, h1{
+  font-family: 'Pattaya', sans-serif;
+}
+
+ main h3{
+  font-family: 'Henny Penny', cursive;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  min-height: 200px;
+}
+
+header {
+  /* background-image: url("/_images/sky.jpg");
+  background-size: cover; */
+  /* background: linear-gradient(135deg, rgba(198,229,241,1) 0%, rgba(215,237,244,1) 20%, rgba(47,186,228,1) 48%, rgba(179,223,235,1) 62%, rgba(33,180,226,1) 86%, rgba(198,229,241,1) 100%); */
+  background: linear-gradient(
+    to right,
+    rgba(241, 246, 249, 1) 0%,
+    rgba(214, 226, 235, 1) 0%,
+    rgba(225, 240, 250, 1) 0%,
+    rgba(119, 178, 223, 0.85) 51%,
+    rgba(175, 199, 213, 0.7) 100%
+  );
+}
+
+header .serch {
+  padding: 8px;
+  border-radius: 8px;
+  background: white;
+}
+
+header input {
+  border: none;
+}
+
+header nav{
+  transition: 0.8s;
+}
+
+header nav a{
+  color: #FFFFFF;
+/* background: #F7C1C1; */
+/* text-shadow: 2px 0px 4px #000000; */
+}
+
+header nav a:hover{
+  transform:translate(0,5%);
+  text-decoration: none;
+}
+
+header nav a {
+  /* border: 1px solid; */
+  /* border-radius: 5px; */
+  /* margin-right: 4px; */
+  color: rgb(25, 41, 66);
+  font-size: 2em;
+}
+
+/* header nav a::before{
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0px;
+  margin: 0 auto;
+  transition: 0.8s;
+}
+
+header nav a:hover::before {
+      
+  background: rgb(5, 82, 126);
+  width: 100%;
+} */
+
+header nav a::after{
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0px;
+  margin: 0 auto;
+  transition: 0.8s;
+}
+
+header nav a:hover::after {
+      
+  background: rgb(5, 82, 126);
+  width: 100%;
+}
+
+.strip .show{
+  display: none;
+}
+
+.carousel-item {
+  background-size: cover;
+  background-position: center center;
+  min-height: 600px;
+}
+
+.carousel-item h2 , .strip h2{
+  color: transparent;
+  background: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+}
+
+main .box{
+  min-height: 330px;
+  /* max-height: 350px; */
+}
+
+ article{
+  background: #ffffee;
+}
+
+article h2 {
+  color: transparent;
+  background: #051be4;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+}
+
+article .moveDown {
+  transition: 0.8s;
+}
+
+article  .moveDown:hover {
+
+  /* transform: translate(4px, 5px); */
+  transform:scale(1.05) ;
+  cursor: pointer;
+}
+
+footer {
+  min-height: 150px;
+  background: linear-gradient(
+    to right,
+    rgba(241, 246, 249, 1) 0%,
+    rgba(214, 226, 235, 1) 0%,
+    rgba(225, 240, 250, 1) 0%,
+    rgba(119, 178, 223, 0.85) 51%,
+    rgba(175, 199, 213, 0.7) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f6f9', endColorstr='#afc7d5', GradientType=1 );
+}
+
+footer .fa {
+  color: aliceblue;
+  font-size: 2em;
+  transition: 0.8s;
+}
+
+footer .fa:hover {
+  transform: translate(0%, 14%);
+}
+
+@media screen and (max-width: 768px) {
+
+ .strip .myCarousel{
+   display: none;
+ }
+
+ .strip{
+  background-image: url("/_images/poto2.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+ }
+
+ .strip .show{
+   display: block;
+ }
+
+  header {
+    min-height: 150px ;
+    position: relative;
+  }
+
+  header nav {
+    position: absolute;
+    top:150px;
+    right:0;
+    width:100%;
+    /* background: white; */
+    z-index: 999;
+    display: none;
+  }
+
+  header nav a:last-of-type{
+    border: none;
+  }
+
+  header nav a{
+     /* background-image: url(/_images/sky.jpg); */
+    background: #dde2e6;
+    display: block;
+    text-align: center;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid black;
+    
+  }
+
+  header .fa:hover{
+    cursor: pointer;
+  }
+
+  main article {
+    order: -1;
+  }
+
+  .btnUp{
+    display: none;
+    transition: 0.8s;
+  }
+
+  .btnUp:hover{
+    /* cursor: pointer; */
+    transform: translate(0px ,-10px);
+  }
+
+}
+

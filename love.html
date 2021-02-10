@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/bootstrap.min.css">
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="style/pics.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+   <!-- pattaya -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+   <!-- another -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+
+  <title>Women attractions</title>
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="js/viewGoUp.js"></script>
+  <script src="js/init_women.js"></script>
+  <script src="js/myUtil_js.js"></script>
+  <script src="js/header_nav_maneger.js"></script>
+ 
+</head>
+
+<body>
+
+  <header class="container-fluid  p-0" id="head">
+
+    <div class=" pl-0 col-12 d-flex justify-content-between align-items-center" style="min-height: 100px">
+      <img src="_images/logo.png" alt="logo" width="200">
+
+      <div class="d-flex justify-content-between">
+        <div class="serch d-none d-md-block mr-lg-3 mr-md-2 ">
+          <input type="text" placeholder="search...">
+          <i class="fa fa-plane mr-1" aria-hidden="true" style="font-size: 1em;"></i>
+         
+        </div>
+
+        <i class="d-md-none mx-3 fa fa-bars" style="font-size: 2em;" aria-hidden="true" id="burger_btn"></i>
+
+      </div>
+
+
+    </div>
+
+    <div class="container p-0">
+
+      <nav class="d-md-flex justify-content-center align-items-center p-0" id="nav_id">
+        <a class="nav1 mx-md-2" href="index.html">HOME</a>
+        <a class="nav2 mx-md-2" href="about.html">ABOUT</a>
+        <a class="nav3 mx-md-2" href="media.html">MEDIA</a>
+        <a class="nav4 mx-md-2" href="faq.html">FAQ</a>
+        <a class="nav5 mx-md-2" href="contact.html">CONTACT</a>
+        <a class="nav6 mx-md-2" href="trivia.html">TRIVIA</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container-fluid p-4 womenMain">
+    <div class="container pt-3 text-center">
+      <h3 class="display-4">Romantic</h3>
+      <hr>
+      <div class="insideMain d-flex flex-wrap col-12">
+
+        <div class="box col-md-6 p-3">
+          <h2>Dating</h2>
+          <hr>
+          <div class="insideBox mb-2" style="background-image: url(/_images/love.jpg)"></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nulla magni consequatur? Architecto
+            delectus corrupti sed consequuntur nihil totam distinctio dolore ullam necessitatibus, est sequi quasi
+            dolorum eligendi vitae explicabo!</p>
+        </div>
+        <!-- end box -->
+        <div class="box col-md-6 p-3">
+          <h2>Dinner</h2>
+          <hr>
+          <div class="insideBox mb-2" style="background-image: url(/_images/love1.jpg)"></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nulla magni consequatur? Architecto
+            delectus corrupti sed consequuntur nihil totam distinctio dolore ullam necessitatibus, est sequi quasi
+            dolorum eligendi vitae explicabo!</p>
+        </div>
+        <!-- end box -->
+        <div class="box col-md-6 p-3">
+          <h2>Silence</h2>
+          <hr>
+          <div class="insideBox mb-2" style="background-image: url(/_images/love2.jpg)"></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nulla magni consequatur? Architecto
+            delectus corrupti sed consequuntur nihil totam distinctio dolore ullam necessitatibus, est sequi quasi
+            dolorum eligendi vitae explicabo!</p>
+        </div>
+        <!-- end box -->
+        <div class="box col-md-6 p-3">
+          <h2>Fresh air</h2>
+          <hr>
+          <div class="insideBox mb-2" style="background-image: url(/_images/love3.jpg)"></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nulla magni consequatur? Architecto
+            delectus corrupti sed consequuntur nihil totam distinctio dolore ullam necessitatibus, est sequi quasi
+            dolorum eligendi vitae explicabo!</p>
+        </div>
+        <!-- end box -->
+      </div>
+    </div>
+  </main>
+
+  <div id="holdGoUp" class="container-fluid d-flex justify-content-center  d-md-none" style="position: fixed; bottom:4px;z-index: 999;" >
+    <a href="#head">
+    <button class="btn btn-dark text-white px-5 btnUp " id="takeMeUp">Go-up</button>
+  </a>
+  </div>
+  <footer class="container-fluid py-5">
+    <div class="container">
+      <div class="links col-12 row justify-content-around">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/?lang=he"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.youtube.com/"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+      </div>
+      <div class=" d-none d-md-block float-right mx-3"><a href="#head"><i class="fa fa-chevron-up p-1"
+            aria-hidden="true" style="color: cadetblue;"></i>
+        </a></div>
+      <div class="bottom">
+        <p class="text-center mt-5 text-light h6 md-h4 text-dark">create by ashi mor. <span
+            class="d-flex justify-content-center  d-md-inline-block"> All right reserved &copy;</span></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
